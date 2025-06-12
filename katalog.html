@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog - Annaba Printing Excellent</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'brand-blue': '#2563eb',
+                        'brand-dark': '#1f2937', 
+                    },
+                    borderRadius: {
+                        '4xl': '2rem',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gradient-to-b from-blue-100 to-white text-brand-dark font-sans">
+
+    <header class="fixed top-0 left-0 right-0 z-40 p-4 md:p-6">
+        <div class="container mx-auto max-w-6xl">
+            <nav class="bg-white/80 backdrop-blur-md rounded-full shadow-lg flex justify-between items-center px-6 py-4">
+                <a href="index.html" id="home" class="text-2xl font-bold text-brand-dark flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-brand-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+                    </svg>
+                    Annaba Printing
+                </a>
+                <div class="hidden lg:flex space-x-8 items-center font-semibold">
+                    <a href="index.html" class="hover:text-brand-blue transition-colors">Home</a>
+                    <a href="order-pesanan.html" class="hover:text-brand-blue transition-colors">Order Pesanan</a>
+                    <a href="katalog.html" class="text-brand-blue font-bold">Katalog</a>
+                    <a href="proposal.html" class="hover:text-brand-blue transition-colors">Proposal</a>
+                    <a href="tentang.html" class="hover:text-brand-blue transition-colors">Tentang Kami</a>
+                </div>
+                <button id="mobile-menu-button" class="lg:hidden text-brand-dark">
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-7 h-7"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" /></svg>
+                </button>
+            </nav>
+        </div>
+    </header>
+    
+    <div id="mobile-menu" class="hidden fixed inset-0 bg-brand-dark/90 backdrop-blur-lg z-50 transition-opacity duration-300 ease-in-out opacity-0">
+        <div class="flex flex-col items-center justify-center h-full text-white text-2xl font-bold space-y-8">
+            <a href="index.html" class="mobile-menu-link opacity-70 hover:opacity-100">Home</a>
+            <a href="order-pesanan.html" class="mobile-menu-link opacity-70 hover:opacity-100">Order Pesanan</a>
+            <a href="katalog.html" class="mobile-menu-link text-blue-300">Katalog</a>
+            <a href="proposal.html" class="mobile-menu-link opacity-70 hover:opacity-100">Proposal</a>
+            <a href="tentang.html" class="mobile-menu-link opacity-70 hover:opacity-100">Tentang Kami</a>
+            <button id="close-menu-button" class="absolute top-8 right-8 text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-10 h-10"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+            </button>
+        </div>
+    </div>
+
+    <main class="container mx-auto px-4 pt-36 md:pt-40 pb-10 space-y-10">
+        
+        <section class="text-center">
+            <h1 class="text-4xl lg:text-5xl font-black text-brand-dark">Katalog Produk Kami</h1>
+            <p class="mt-3 text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
+                Lihat berbagai contoh produk yang telah kami kerjakan sebagai referensi untuk pesanan Anda.
+            </p>
+        </section>
+
+        <section class="bg-white/70 backdrop-blur-lg rounded-4xl shadow-xl p-6 md:p-8 lg:p-12">
+            <h2 class="text-2xl md:text-3xl font-bold mb-6">1. Ukuran Normal 24 x 13,5cm</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="border p-4 rounded-xl shadow">
+                    <img src="img/tomo-1.jpg" alt="Brang Classic" class="rounded-lg">
+                </div>
+                <div class="border p-4 rounded-xl shadow">
+                    <img src="img/tomo.jpg" alt="Brang Classic" class="rounded-lg">
+                </div>
+                <div class="border p-4 rounded-xl shadow">
+                    <img src="img/sumberjaya-1.jpg" alt="Brang Classic" class="rounded-lg">
+                </div>
+                <div class="border p-4 rounded-xl shadow">
+                    <img src="img/sumberjaya.jpg" alt="Brang Classic" class="rounded-lg">
+                </div>
+                <div class="border p-4 rounded-xl shadow">
+                    <img src="img/sukasari-baru.jpg" alt="Brang Classic" class="rounded-lg">
+                </div>
+                <div class="border p-4 rounded-xl shadow">
+                    <img src="img/sukasari.jpg" alt="Brang Classic" class="rounded-lg">
+                </div>
+                <div class="border p-4 rounded-xl shadow">
+                    <img src="img/pamulihan.jpg" alt="Brang Classic" class="rounded-lg">
+                </div>
+                <div class="border p-4 rounded-xl shadow">
+                    <img src="img/pamanukan2.jpg" alt="Brang Classic" class="rounded-lg">
+                </div>
+                <div class="border p-4 rounded-xl shadow">
+                    <img src="img/pamanukan.jpg" alt="Brang Classic" class="rounded-lg">
+                </div>
+                <div class="border p-4 rounded-xl shadow">
+                    <img src="img/palasah.jpg" alt="Brang Classic" class="rounded-lg">
+                </div>
+                <div class="border p-4 rounded-xl shadow">
+                    <img src="img/pagaden-1.jpg" alt="Brang Classic" class="rounded-lg">
+                </div>
+                <div class="border p-4 rounded-xl shadow">
+                    <img src="img/mekarjaya.jpg" alt="Brang Classic" class="rounded-lg">
+                </div>
+                <div class="border p-4 rounded-xl shadow">
+                    <img src="img/majalengka-2.jpg" alt="Brang Classic" class="rounded-lg">
+                </div>
+                <div class="border p-4 rounded-xl shadow">
+                    <img src="img/majalengka-1-1.jpg" alt="Brang Classic" class="rounded-lg">
+                </div>
+                <div class="border p-4 rounded-xl shadow">
+                    <img src="img/losarang.jpg" alt="Brang Classic" class="rounded-lg">
+                </div>
+                <div class="border p-4 rounded-xl shadow">
+                    <img src="img/ligung-1.jpg" alt="Brang Classic" class="rounded-lg">
+                </div>
+                <div class="border p-4 rounded-xl shadow">
+                    <img src="img/karangwareng-1.jpg" alt="Brang Classic" class="rounded-lg">
+                </div>
+                <div class="border p-4 rounded-xl shadow">
+                    <img src="img/kadipaten.jpg" alt="Brang Classic" class="rounded-lg">
+                </div>
+                <div class="border p-4 rounded-xl shadow">
+                    <img src="img/pamanukan23.jpg" alt="Brang Classic" class="rounded-lg">
+                </div>
+                <div class="border p-4 rounded-xl shadow">
+                    <img src="img/losarang67.jpg" alt="Brang Classic" class="rounded-lg">
+                </div>
+                <div class="border p-4 rounded-xl shadow">
+                    <img src="img/bongas233.jpg" alt="Brang Classic" class="rounded-lg">
+                </div>
+                <div class="border p-4 rounded-xl shadow">
+                    <img src="img/ciledug2.jpg" alt="Brang Classic" class="rounded-lg">
+                </div>
+                <div class="border p-4 rounded-xl shadow">
+                    <img src="img/ciledug.jpg" alt="Brang Classic" class="rounded-lg">
+                </div>
+                <div class="border p-4 rounded-xl shadow">
+                    <img src="img/binong-1.jpg" alt="Brang Classic" class="rounded-lg">
+                </div>
+                <div class="border p-4 rounded-xl shadow">
+                    <img src="img/binong.jpg" alt="Brang Classic" class="rounded-lg">
+                </div>
+                <div class="border p-4 rounded-xl shadow">
+                    <img src="img/anjatan2.jpg" alt="Brang Classic" class="rounded-lg">
+                </div>
+                <div class="border p-4 rounded-xl shadow">
+                    <img src="img/anjatan.jpg" alt="Brang Classic" class="rounded-lg">
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white/70 backdrop-blur-lg rounded-4xl shadow-xl p-6 md:p-8 lg:p-12">
+            <h2 class="text-2xl md:text-3xl font-bold mb-6">2. Ukuran Sedang 25 x 15cm</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="border p-4 rounded-xl shadow">
+                    <img src="img/pamulihan.jpg" alt="Brang Classic" class="rounded-lg">
+                </div>
+                <div class="border p-4 rounded-xl shadow">
+                    <img src="img/cirebon.jpg" alt="Brang Classic" class="rounded-lg">
+                </div>
+                <div class="border p-4 rounded-xl shadow">
+                    <img src="img/karangwareng.jpg" alt="Brang Classic" class="rounded-lg">
+                </div>
+                <div class="border p-4 rounded-xl shadow">
+                    <img src="img/ligung.jpg" alt="Brang Classic" class="rounded-lg">
+                </div>
+                <div class="border p-4 rounded-xl shadow">
+                    <img src="img/ligung-besar.jpg" alt="Brang Classic" class="rounded-lg">
+                </div>
+                <div class="border p-4 rounded-xl shadow">
+                    <img src="img/pagaden.jpg" alt="Brang Classic" class="rounded-lg">
+                </div>
+                <div class="border p-4 rounded-xl shadow">
+                    <img src="img/pagaden-besar.jpg" alt="Brang Classic" class="rounded-lg">
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white/70 backdrop-blur-lg rounded-4xl shadow-xl p-6 md:p-8 lg:p-12 space-y-10">
+            <div>
+                <h2 class="text-2xl md:text-3xl font-bold mb-6">3. Ukuran Ketua RT / RW 33 x 22 cm</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="border p-4 rounded-xl shadow">
+                        <img src="img/besar.jpg" alt="Brang Classic" class="rounded-lg">
+                    </div>
+                    <div class="border p-4 rounded-xl shadow">
+                        <img src="img/plat-ketua-besar.jpg" alt="Brang Classic" class="rounded-lg">
+                    </div>
+                </div>
+            </div>
+            <div class="border-t pt-10">
+                <h2 class="text-2xl md:text-3xl font-bold mb-6">4. Acrylic 24 x 12 cm (Tebal 2mm)</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="border p-4 rounded-xl shadow">
+                        <img src="img/kuning2.jpg" alt="Brang Classic" class="rounded-lg">
+                    </div>
+                </div>
+            </div>
+            <div class="border-t pt-10">
+                <h2 class="text-2xl md:text-3xl font-bold mb-6">5. Acrylic 24 x 13,5 cm (Tebal 2,5mm)</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="border p-4 rounded-xl shadow">
+                        <img src="img/kuning.jpg" alt="Brang Classic" class="rounded-lg">
+                    </div>
+                    <div class="border p-4 rounded-xl shadow">
+                        <img src="img/putih.jpg" alt="Brang Classic" class="rounded-lg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <footer class="container mx-auto px-4 pb-8">
+        <div class="bg-white/70 backdrop-blur-lg rounded-4xl shadow-xl p-6 text-center">
+            <p class="text-gray-600">&copy; 2025 Mustofa Aldin. Annaba Printing Excellent.</p>
+        </div>
+    </footer>
+    
+    <div id="image-modal" class="hidden fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4 transition-opacity duration-300 ease-in-out opacity-0">
+        <div class="relative max-w-3xl max-h-full">
+            <img id="modal-image" src="" alt="Gambar Produk Diperbesar" class="w-auto h-auto max-w-full max-h-[90vh] rounded-2xl">
+            <button id="close-modal-button" class="absolute -top-4 -right-4 bg-white text-brand-dark rounded-full p-2 shadow-lg">
+                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+            </button>
+        </div>
+    </div>
+    
+    <script>
+        // --- Menu Mobile ---
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeMenuButton = document.getElementById('close-menu-button');
+        const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
+
+        const openMenu = () => {
+            mobileMenu.classList.remove('hidden');
+            setTimeout(() => { mobileMenu.classList.remove('opacity-0'); }, 10);
+        };
+        const closeMenu = () => {
+            mobileMenu.classList.add('opacity-0');
+            setTimeout(() => { mobileMenu.classList.add('hidden'); }, 300);
+        };
+
+        mobileMenuButton.addEventListener('click', openMenu);
+        closeMenuButton.addEventListener('click', closeMenu);
+        mobileMenuLinks.forEach(link => { link.addEventListener('click', closeMenu); });
+
+        // --- Image Modal / Lightbox ---
+        const imageModal = document.getElementById('image-modal');
+        const modalImage = document.getElementById('modal-image');
+        const closeModalButton = document.getElementById('close-modal-button');
+        const catalogImages = document.querySelectorAll('.catalog-image');
+
+        const openModal = (e) => {
+            modalImage.src = e.target.src;
+            imageModal.classList.remove('hidden');
+            setTimeout(() => { imageModal.classList.remove('opacity-0'); }, 10);
+        };
+
+        const closeModal = () => {
+            imageModal.classList.add('opacity-0');
+            setTimeout(() => { imageModal.classList.add('hidden'); }, 300);
+        };
+
+        catalogImages.forEach(img => {
+            img.addEventListener('click', openModal);
+        });
+
+        closeModalButton.addEventListener('click', closeModal);
+        imageModal.addEventListener('click', (e) => {
+            if (e.target === imageModal) {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
